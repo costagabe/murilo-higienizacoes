@@ -1,14 +1,14 @@
 <template>
   <section class="testimonials">
     <div class="container">
-      <h2>O Que Nossos Clientes Dizem</h2>
+      <h2>O Que Meus Clientes Dizem</h2>
       <div class="testimonial-grid">
         <div class="testimonial">
-          <p>"Meu sofá parece novo! A equipe foi profissional e rápida. Altamente recomendado!"</p>
+          <p>"Meu sofá parece novo! O trabalho foi profissional e rápido. Altamente recomendado!"</p>
           <span>- Maria S.</span>
         </div>
         <div class="testimonial">
-          <p>"Serviço excelente. Eles removeram uma mancha de café que eu achava que era permanente."</p>
+          <p>"Serviço excelente. Ele removeu uma mancha de café que eu achava que era permanente."</p>
           <span>- João D.</span>
         </div>
       </div>

@@ -1,17 +1,17 @@
 <template>
   <section class="how-it-works">
     <div class="container">
-      <h2>Como Funciona</h2>
+      <h2>Como o Serviço Funciona</h2>
       <div class="steps">
         <div class="step">
           <span>1</span>
           <h3>Agende Online</h3>
-          <p>Selecione seu serviço e agende uma data que funcione para você.</p>
+          <p>Selecione o serviço e agende uma data que funcione para você.</p>
         </div>
         <div class="step">
           <span>2</span>
-          <h3>Nós Limpamos</h3>
-          <p>Nossos profissionais certificados chegam e realizam a limpeza.</p>
+          <h3>Eu Limpo</h3>
+          <p>Chego no horário e realizo a limpeza completa.</p>
         </div>
         <div class="step">
           <span>3</span>

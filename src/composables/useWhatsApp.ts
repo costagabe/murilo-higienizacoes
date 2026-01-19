@@ -14,7 +14,7 @@ export function useWhatsApp() {
       greeting = "Boa noite";
     }
 
-    const message = `Olá, Murilo, ${greeting}! Encontrei o seu site e tenho interesse em solicitar um orçamento. Poderíamos conversar?`;
+    const message = `Olá, Murilo, ${greeting}! Encontrei seu site e gostaria de solicitar um orçamento. Podemos conversar?`;
     const encodedMessage = encodeURIComponent(message);
     
     return `https://api.whatsapp.com/send?phone=5511963280867&text=${encodedMessage}`;

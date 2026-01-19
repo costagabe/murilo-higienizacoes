@@ -1,21 +1,21 @@
 <template>
   <section class="services">
     <div class="container">
-      <h2>Nossos Serviços</h2>
+      <h2>Meus Serviços</h2>
       <div class="service-grid">
         <div class="service-card">
-          <img src="https://via.placeholder.com/100" alt="Higienização de Sofá" />
-          <h3>Higienização de Sofá</h3>
+          <img src="https://via.placeholder.com/100" alt="Higienização de Sofás" />
+          <h3>Higienização de Sofás</h3>
           <p>Limpeza profunda para todos os tipos de tecidos e sofás de couro.</p>
         </div>
         <div class="service-card">
-          <img src="https://via.placeholder.com/100" alt="Limpeza de Carpete" />
-          <h3>Limpeza de Carpete</h3>
+          <img src="https://via.placeholder.com/100" alt="Limpeza de Carpetes" />
+          <h3>Limpeza de Carpetes</h3>
           <p>Técnicas avançadas para remover manchas e restaurar seus carpetes.</p>
         </div>
         <div class="service-card">
-          <img src="https://via.placeholder.com/100" alt="Higienização de Colchão" />
-          <h3>Higienização de Colchão</h3>
+          <img src="https://via.placeholder.com/100" alt="Higienização de Colchões" />
+          <h3>Higienização de Colchões</h3>
           <p>Higienização e limpeza profunda para um sono mais saudável.</p>
         </div>
       </div>

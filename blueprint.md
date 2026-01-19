@@ -33,5 +33,7 @@ Seguindo o **Princípio da Responsabilidade Única (SRP)**, a aplicação foi re
 
 ## 3. Plano Atual
 
-1.  **Restaurar Tema Claro:** Modificar o arquivo CSS global para reverter o esquema de cores para um tema claro (fundo claro, texto escuro).
-2.  **Aumentar Seção Hero:** Duplicar o `padding` vertical na seção "Hero" para aumentar sua altura e impacto visual.
+1.  **Refatoração de Texto (Tom e Voz):**
+    *   Alterar toda a comunicação para a primeira pessoa do singular (ex: "Nossos serviços" para "Meus serviços").
+    *   Pluralizar nomes de serviços (ex: "Higienização de Sofá" para "Higienização de Sofás").
+    *   Garantir que o tom seja pessoal e direto, refletindo uma empresa de um único profissional.
