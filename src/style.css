@@ -4,11 +4,11 @@
   --primary-color: #007BFF;
   --secondary-color: #00C6FF;
 
-  /* Dark Theme Palette */
-  --background-color: #121212;
-  --surface-color: #1E1E1E;
-  --text-color: #E0E0E0;
-  --text-color-darker: #B3B3B3;
+  /* Light Theme Palette */
+  --background-color: #FFFFFF;
+  --surface-color: #F8F9FA;
+  --text-color: #212529;
+  --text-color-darker: #495057;
 }
 
 body {

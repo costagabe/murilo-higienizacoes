@@ -9,7 +9,7 @@ Este projeto é uma landing page moderna de página única para a "Murilo Higien
 
 ### Arquitetura (Princípios SOLID)
 
-Seguindo o **Princípio da Responsabilidade Única (SRP)**, a aplicação foi refatorada a partir de um único componente monolítico (`App.vue`) para uma estrutura de componentes especializados и de responsabilidade única.
+Seguindo o **Princípio da Responsabilidade Única (SRP)**, a aplicação foi refatorada a partir de um único componente monolítico (`App.vue`) para uma estrutura de componentes especializados e de responsabilidade única.
 
 *   **`src/composables`**: Armazena a lógica de negócio reutilizável (o "cérebro").
     *   `useTheme.ts`: Gerencia o estado das cores primárias/secundárias e o estilo dinâmico da aplicação.
@@ -33,10 +33,5 @@ Seguindo o **Princípio da Responsabilidade Única (SRP)**, a aplicação foi re
 
 ## 3. Plano Atual
 
-O plano atual é refatorar a aplicação para seguir os princípios SOLID e de componentização atômica, quebrando o `App.vue` em componentes menores e mais focados.
-
-1.  **Atualizar `blueprint.md`:** Documentar a nova arquitetura baseada em componentes.
-2.  **Criar Estrutura de Diretórios:** Criar as pastas `composables`, `components/ui`, `components/layout` e `components/sections`.
-3.  **Extrair Lógica para Composables:** Criar `useTheme.ts` e `useWhatsApp.ts`.
-4.  **Criar Componentes:** Criar todos os componentes `.vue` conforme a arquitetura descrita acima.
-5.  **Refatorar `App.vue`:** Simplificar o `App.vue` para ser um orquestrador de componentes.
+1.  **Restaurar Tema Claro:** Modificar o arquivo CSS global para reverter o esquema de cores para um tema claro (fundo claro, texto escuro).
+2.  **Aumentar Seção Hero:** Duplicar o `padding` vertical na seção "Hero" para aumentar sua altura e impacto visual.

@@ -28,7 +28,7 @@ defineProps({
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 5rem 0;
+  padding: 10rem 0;
   text-align: center;
 }
 
