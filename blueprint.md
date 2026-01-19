@@ -16,20 +16,17 @@ Este projeto é uma landing page moderna de página única para a "CleanCo", uma
 *   **Imagens:** Imagens de placeholder são usadas para a seção principal e outros elementos visuais.
 
 ### Recursos
+*   **Modal de Solicitação de Orçamento:** Um formulário modal que é aberto ao clicar nos botões "Solicite um Orçamento". O formulário inclui campos para nome, telefone, tipo de serviço e uma mensagem.
 *   **Personalização Dinâmica de Cores:** Dois campos de seleção de cores são fornecidos em um painel de configurações para permitir alterações em tempo real nas cores primárias e secundárias do site.
-*   **Estrutura Baseada em Componentes (em um único arquivo):** A aplicação é construída dentro de um único componente Vue (`App.vue`) dividido em seções lógicas:
-    *   **Cabeçalho:** Contém o logotipo da empresa e um botão de chamada para ação principal.
-    *   **Seção Principal:** Apresenta um título atraente, um breve texto descritivo e um botão proeminente "Solicite um Orçamento".
-    *   **Seção de Serviços:** Lista os principais serviços oferecidos (por exemplo, Higienização de Sofás, Limpeza de Carpetes) com breves descrições.
-    *   **Seção "Como Funciona":** Um guia visual de 3 passos explicando a jornada do cliente.
-    *   **Seção de Depoimentos:** Exibe o feedback dos clientes para construir prova social.
-    *   **Rodapé:** Inclui informações de contato e links.
-*   **Gerenciamento de Estado:** A Composition API do Vue (`ref`) é usada para gerenciar o estado reativo das cores dinâmicas.
+*   **Estrutura Baseada em Componentes:** A aplicação é dividida em componentes reutilizáveis:
+    *   `App.vue`: O componente principal que orquestra a página.
+    *   `QuoteModal.vue`: O componente que contém o formulário de orçamento.
+*   **Gerenciamento de Estado:** A Composition API do Vue (`ref`) é usada para gerenciar o estado reativo das cores dinâmicas e a visibilidade do modal.
 
 ## 3. Plano Atual
 
-O plano atual é refatorar o estilo da aplicação para usar um tema escuro, melhorando a estética e o conforto visual.
+O plano atual é criar e integrar um modal de solicitação de orçamento.
 
-1.  **Atualizar `blueprint.md`:** Adicionar uma nota sobre a implementação de um tema escuro.
-2.  **Atualizar `src/style.css`:** Introduzir variáveis de CSS para uma paleta de cores escuras.
-3.  **Atualizar `App.vue`:** Modificar os estilos para usar as novas variáveis de CSS.
+1.  **Atualizar `blueprint.md`:** Documentar a nova funcionalidade.
+2.  **Criar `src/components/QuoteModal.vue`:** Construir o componente do formulário modal.
+3.  **Atualizar `App.vue`:** Integrar e controlar a exibição do modal.

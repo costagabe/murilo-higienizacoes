@@ -1,13 +1,23 @@
 <script setup>
 import { ref, computed } from 'vue';
+import QuoteModal from './components/QuoteModal.vue';
 
 const primaryColor = ref('#007BFF');
 const secondaryColor = ref('#00C6FF');
+const isModalOpen = ref(false);
 
 const appStyle = computed(() => ({
   '--primary-color': primaryColor.value,
   '--secondary-color': secondaryColor.value,
 }));
+
+const openModal = () => {
+  isModalOpen.value = true;
+};
+
+const closeModal = () => {
+  isModalOpen.value = false;
+};
 </script>
 
 <template>
@@ -15,7 +25,7 @@ const appStyle = computed(() => ({
     <header class="header">
       <div class="container">
         <img src="./assets/logo.svg" alt="Logo da CleanCo" class="logo" />
-        <a href="#quote" class="btn btn-primary">Solicite um Orçamento</a>
+        <a href="javascript:void(0)" class="btn btn-primary" @click="openModal">Solicite um Orçamento</a>
       </div>
     </header>
 
@@ -24,7 +34,7 @@ const appStyle = computed(() => ({
         <div class="container">
           <h1>Higienização Profissional de Sofás e Estofados</h1>
           <p>Damos vida nova aos seus móveis. Rápido, eficaz e acessível.</p>
-          <a href="#quote" class="btn btn-secondary">Obtenha uma Estimativa Gratuita</a>
+          <a href="javascript:void(0)" class="btn btn-secondary" @click="openModal">Obtenha uma Estimativa Gratuita</a>
         </div>
       </section>
 
@@ -105,6 +115,8 @@ const appStyle = computed(() => ({
         </div>
       </div>
     </footer>
+
+    <QuoteModal v-if="isModalOpen" @close="closeModal" />
   </div>
 </template>
 
