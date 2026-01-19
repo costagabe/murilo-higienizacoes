@@ -6,19 +6,27 @@
       
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="https://i.imgur.com/example-before1.png" alt="Sofá antes da limpeza">
+          <img src="https://placehold.co/600x400/1A374D/FFFFFF?text=Antes" alt="Sofá antes da limpeza">
           <div class="overlay">Antes</div>
         </div>
         <div class="gallery-item">
-          <img src="https://i.imgur.com/example-after1.png" alt="Sofá depois da limpeza">
+          <img src="https://placehold.co/600x400/FFFFFF/1A374D?text=Depois" alt="Sofá depois da limpeza">
           <div class="overlay">Depois</div>
         </div>
         <div class="gallery-item">
-          <img src="https://i.imgur.com/example-before2.png" alt="Poltrona antes da limpeza">
+          <img src="https://placehold.co/600x400/1A374D/FFFFFF?text=Antes" alt="Poltrona antes da limpeza">
           <div class="overlay">Antes</div>
         </div>
         <div class="gallery-item">
-          <img src="https://i.imgur.com/example-after2.png" alt="Poltrona depois da limpeza">
+          <img src="https://placehold.co/600x400/FFFFFF/1A374D?text=Depois" alt="Poltrona depois da limpeza">
+          <div class="overlay">Depois</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x400/1A374D/FFFFFF?text=Antes" alt="Cadeira antes da limpeza">
+          <div class="overlay">Antes</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x400/FFFFFF/1A374D?text=Depois" alt="Cadeira depois da limpeza">
           <div class="overlay">Depois</div>
         </div>
       </div>
@@ -33,7 +41,7 @@
 <style scoped>
 .gallery {
   padding: 4rem 0;
-  background-color: #f8f9fa; /* Um fundo levemente acinzentado para destacar a seção */
+  background-color: #f8f9fa;
 }
 
 .gallery h2 {
@@ -53,7 +61,7 @@
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -61,7 +69,7 @@
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border: 4px solid var(--primary-color);
   transition: transform 0.3s ease;
 }
 
@@ -79,10 +87,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(26, 55, 77, 0.6);
   color: white;
   text-align: center;
   padding: 0.5rem 0;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
