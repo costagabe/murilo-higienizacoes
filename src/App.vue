@@ -24,7 +24,7 @@ const closeModal = () => {
   <div id="app-container" :style="appStyle">
     <header class="header">
       <div class="container">
-        <img src="./assets/logo.svg" alt="Logo da CleanCo" class="logo" />
+        <img src="./assets/logo.svg" alt="Logo da Murilo Higienizações" class="logo" />
         <a href="javascript:void(0)" class="btn btn-primary" @click="openModal">Solicite um Orçamento</a>
       </div>
     </header>
@@ -104,7 +104,7 @@ const closeModal = () => {
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 CleanCo. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Murilo Higienizações. Todos os direitos reservados.</p>
         <div class="color-picker">
           <label for="primaryColor">Cor Primária:</label>
           <input type="color" v-model="primaryColor" id="primaryColor" />
