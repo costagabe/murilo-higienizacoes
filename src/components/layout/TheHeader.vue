@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <img src="../../assets/logo.svg" alt="Logo da Murilo Higienizações" class="logo" />
+      <img style="width: 200px; height: 75px" src="../../assets/logo.png" alt="Logo da Murilo Higienizações" class="logo" />
       <ActionButton :href="whatsappLink">
         Solicite um Orçamento
       </ActionButton>

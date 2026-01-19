@@ -9,7 +9,7 @@ O projeto é um site de marketing de página única para a empresa de limpeza de
 ```
 src
 ├── assets
-│   └── logo.svg
+│   └── logo.png
 ├── components
 │   ├── layout
 │   │   ├── TheHeader.vue
@@ -31,8 +31,8 @@ src
 
 ### Paleta de Cores
 
-- **Primária:** `#406882` (Azul Escuro)
-- **Secundária:** `#406882` (Azul mais claro para efeitos de hover)
+- **Primária:** `#2ca0c9` (Azul Escuro)
+- **Secundária:** `#2ca0c9` (Azul mais claro para efeitos de hover)
 - **Fundo:** `#FFFFFF` (Branco)
 - **Texto:** `#343a40` (Cinza Escuro)
 
