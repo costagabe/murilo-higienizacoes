@@ -5,18 +5,18 @@
       <div class="steps">
         <div class="step">
           <span>1</span>
-          <h3>Agende Online</h3>
-          <p>Selecione o serviço e agende uma data que funcione para você.</p>
+          <h3>Solicite um Orçamento</h3>
+          <p>Envie fotos do seu estofado pelo WhatsApp e receba um orçamento justo e rápido.</p>
         </div>
         <div class="step">
           <span>2</span>
-          <h3>Eu Limpo</h3>
-          <p>Chego no horário e realizo a limpeza completa.</p>
+          <h3>Agende o Melhor Horário</h3>
+          <p>Escolha o dia e a hora que ficam melhores para você. Eu vou até a sua casa.</p>
         </div>
         <div class="step">
           <span>3</span>
-          <h3>Aproveite</h3>
-          <p>Aproveite seus móveis frescos e limpos em poucas horas.</p>
+          <h3>Receba seu Sofá Novo</h3>
+          <p>Aproveite seu estofado limpo, cheiroso e livre de bactérias em poucas horas.</p>
         </div>
       </div>
     </div>
@@ -29,6 +29,7 @@
 <style scoped>
 .how-it-works {
   padding: 4rem 0;
+  background-color: var(--background-color);
 }
 
 .how-it-works h2 {
@@ -36,10 +37,10 @@
   margin-bottom: 3rem;
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--text-color); /* Título em cinza escuro para consistência */
 }
 
-.how-it-works .steps {
+.steps {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
@@ -48,9 +49,10 @@
 
 .step {
   background: var(--surface-color);
-  padding: 2.5rem;
+  border: 1px solid #e9ecef; /* Adiciona uma borda sutil */
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* Sombra mais suave */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 1;
@@ -59,20 +61,31 @@
 
 .step:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Sombra um pouco mais forte no hover */
 }
 
 .step span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: var(--primary-color);
   color: #fff;
-  font-size: 2rem;
-  margin: 0 auto 1rem;
+  font-size: 1.8rem;
+  margin: 0 auto 1.5rem;
   font-weight: 700;
+}
+
+.step h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.step p {
+    color: var(--text-color-darker);
+    line-height: 1.6;
 }
 </style>

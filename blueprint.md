@@ -1,4 +1,3 @@
-
 # Blueprint: Murilo Higienizações Landing Page
 
 ## 1. Visão Geral
@@ -7,33 +6,38 @@ Este projeto é uma landing page moderna de página única para a "Murilo Higien
 
 ## 2. Esboço e Recursos do Projeto
 
-### Arquitetura (Princípios SOLID)
+### Arquitetura
 
-Seguindo o **Princípio da Responsabilidade Única (SRP)**, a aplicação foi refatorada a partir de um único componente monolítico (`App.vue`) para uma estrutura de componentes especializados e de responsabilidade única.
+*   **`src/composables`**: Lógica de negócio reutilizável.
+    *   `useWhatsApp.ts`: Constrói a URL do WhatsApp com uma mensagem dinâmica.
+*   **`src/components`**: Componentes Vue, organizados por função.
+    *   **`ui`**: Componentes atômicos (ex: `ActionButton.vue`).
+    *   **`layout`**: Componentes estruturais (Header, Footer).
+    *   **`sections`**: Seções principais da landing page (`Hero`, `Services`, etc.).
 
-*   **`src/composables`**: Armazena a lógica de negócio reutilizável (o "cérebro").
-    *   `useTheme.ts`: Gerencia o estado das cores primárias/secundárias e o estilo dinâmico da aplicação.
-    *   `useWhatsApp.ts`: Constrói a URL do WhatsApp com uma mensagem dinâmica baseada no horário.
-*   **`src/components`**: Contém os componentes Vue, organizados por função.
-    *   **`ui`**: Componentes de UI atômicos e reutilizáveis.
-        *   `ActionButton.vue`: Um botão de ação genérico.
-    *   **`layout`**: Componentes estruturais da página.
-        *   `TheHeader.vue`: O cabeçalho da aplicação.
-        *   `TheFooter.vue`: O rodapé da aplicação, contendo os seletores de cor.
-    *   **`sections`**: Componentes que representam as principais seções da landing page.
-        *   `HeroSection.vue`
-        *   `ServicesSection.vue`
-        *   `HowItWorksSection.vue`
-        *   `TestimonialsSection.vue`
-*   **`App.vue`**: Atua como o componente "orquestrador". Sua única responsabilidade é importar os *composables* para gerenciar o estado e montar os componentes de seção e layout, passando os dados necessários via props.
+### Identidade Visual e Tom de Voz
 
-### Recursos
-*   **Link Direto para WhatsApp:** Botões de CTA que geram uma mensagem personalizada para o WhatsApp com base na hora do dia.
-*   **Personalização Dinâmica de Cores:** Seletores de cores no rodapé que alteram o tema do site em tempo real.
+*   **Tom:** Pessoal e direto (primeira pessoa do singular).
+*   **Paleta de Cores:** Inspirada no site `sofanovodenovo.com.br`, usando verde como cor primária, branco para o fundo e cinza-escuro para textos, transmitindo limpeza e profissionalismo.
 
-## 3. Plano Atual
+## 3. Plano de Refatoração Atual
 
-1.  **Refatoração de Texto (Tom e Voz):**
-    *   Alterar toda a comunicação para a primeira pessoa do singular (ex: "Nossos serviços" para "Meus serviços").
-    *   Pluralizar nomes de serviços (ex: "Higienização de Sofá" para "Higienização de Sofás").
-    *   Garantir que o tom seja pessoal e direto, refletindo uma empresa de um único profissional.
+**Inspirado em: `https://sofanovodenovo.com.br/`**
+
+1.  **Atualizar Estilos Globais (`style.css`):**
+    *   Substituir a paleta de cores atual pelas novas cores primárias (verde), de superfície (branco) e de texto (cinza-escuro).
+
+2.  **Refatorar `HeroSection.vue`:**
+    *   Adicionar uma lista de benefícios com ícones (Ex: ✅ Elimina ácaros, ✅ Remove manchas) para aumentar o impacto da proposta de valor.
+
+3.  **Criar Nova Seção `GallerySection.vue`:**
+    *   Implementar uma galeria de "Antes e Depois" para fornecer prova social e visual do resultado do trabalho.
+
+4.  **Criar Nova Seção `FAQSection.vue`:**
+    *   Desenvolver uma seção de Perguntas Frequentes para responder às principais dúvidas dos clientes e quebrar objeções de venda.
+
+5.  **Simplificar `TheFooter.vue`:**
+    *   Remover a funcionalidade de seleção de tema para focar em uma identidade de marca única e forte.
+
+6.  **Integrar Novas Seções no `App.vue`:**
+    *   Adicionar `GallerySection` e `FAQSection` ao layout principal da aplicação.

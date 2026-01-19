@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-  --primary-color: #007BFF;
-  --secondary-color: #00C6FF;
+  --primary-color: #28a745; /* Verde Principal */
+  --secondary-color: #218838; /* Verde Escuro para Hover */
 
-  /* Light Theme Palette */
+  /* Paleta Principal */
   --background-color: #FFFFFF;
-  --surface-color: #F8F9FA;
-  --text-color: #212529;
-  --text-color-darker: #495057;
+  --surface-color: #FFFFFF;
+  --text-color: #343a40; /* Cinza Escuro */
+  --text-color-darker: #6c757d; /* Cinza */
 }
 
 body {
