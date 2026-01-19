@@ -12,11 +12,10 @@
 
 <style scoped>
 .footer {
-  background: #f8f9fa; /* Um cinza bem claro para o rodapé */
-  color: var(--text-color-darker);
+  background: var(--primary-color);
+  color: #fff;
   padding: 2rem 0;
   text-align: center;
-  border-top: 1px solid #e9ecef;
 }
 
 .footer p {

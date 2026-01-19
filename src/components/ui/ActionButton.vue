@@ -26,7 +26,7 @@ defineProps({
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(26, 55, 77, 0.25);
   display: inline-block;
 }
 
@@ -40,6 +40,7 @@ defineProps({
   background-color: transparent;
   color: var(--primary-color);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 55, 77, 0.3);
 }
 
 .btn-secondary {
@@ -52,5 +53,6 @@ defineProps({
   background-color: transparent;
   color: var(--secondary-color);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(64, 104, 130, 0.3);
 }
 </style>

@@ -6,10 +6,22 @@
         <p>Seu sofá limpo e novo em poucas horas, com o melhor preço da região. Elimine sujeiras, manchas, ácaros e bactérias.</p>
         
         <ul class="benefits-list">
-          <li>✅ Remove Manchas e Sujeira Pesada</li>
-          <li>✅ Elimina Ácaros, Fungos e Bactérias</li>
-          <li>✅ Deixa um Cheiro Agradável de Limpeza</li>
-          <li>✅ Seguro para Crianças e Animais de Estimação</li>
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="check-icon"><path d="M20 6L9 17L4 12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Remove Manchas e Sujeira Pesada</span>
+          </li>
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="check-icon"><path d="M20 6L9 17L4 12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Elimina Ácaros, Fungos e Bactérias</span>
+          </li>
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="check-icon"><path d="M20 6L9 17L4 12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Deixa um Cheiro Agradável de Limpeza</span>
+          </li>
+           <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="check-icon"><path d="M20 6L9 17L4 12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Seguro para Crianças e Animais de Estimação</span>
+          </li>
         </ul>
 
         <ActionButton :href="whatsappLink" type="primary">
@@ -82,6 +94,10 @@ defineProps({
   color: var(--text-color);
 }
 
+.check-icon {
+  stroke: var(--primary-color);
+}
+
 .hero-image {
   flex: 1;
   max-width: 500px;
@@ -90,7 +106,8 @@ defineProps({
 .hero-image img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
 }
 
 /* Responsive */
