@@ -31,7 +31,7 @@ src
 
 ### Paleta de Cores
 
-- **Primária:** `#1A374D` (Azul Escuro)
+- **Primária:** `#406882` (Azul Escuro)
 - **Secundária:** `#406882` (Azul mais claro para efeitos de hover)
 - **Fundo:** `#FFFFFF` (Branco)
 - **Texto:** `#343a40` (Cinza Escuro)
