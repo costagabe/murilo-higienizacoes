@@ -28,9 +28,6 @@
           Solicite um Orçamento Grátis
         </ActionButton>
       </div>
-      <div class="hero-image">
-        <img src="https://i.imgur.com/8LwJCQ2.png" alt="Sofá limpo e higienizado">
-      </div>
     </div>
   </section>
 </template>
@@ -38,6 +35,7 @@
 <script setup>
 import { defineProps } from 'vue';
 import ActionButton from '../ui/ActionButton.vue';
+import backgroundUrl from '@/assets/fundo-principal.png';
 
 defineProps({
   whatsappLink: {
@@ -45,44 +43,62 @@ defineProps({
     required: true,
   },
 });
+
+const bgImage = `url(${backgroundUrl})`;
 </script>
 
 <style scoped>
 .hero {
-  background-color: var(--background-color);
-  padding: 4rem 0;
-  text-align: left;
+  background-image: v-bind(bgImage);
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
 }
 
 .hero-text {
-  flex: 1;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 700;
-  color: var(--text-color);
   line-height: 1.2;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 1.5rem 0;
-  color: var(--text-color-darker);
+  font-weight: 400;
 }
 
 .benefits-list {
   list-style: none;
   padding: 0;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  display: inline-block;
+  text-align: left;
 }
 
 .benefits-list li {
@@ -91,39 +107,20 @@ defineProps({
   gap: 0.8rem;
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: var(--text-color);
 }
 
 .check-icon {
-  stroke: var(--primary-color);
-}
-
-.hero-image {
-  flex: 1;
-  max-width: 500px;
-}
-
-.hero-image img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  border: 1px solid #eee;
+  stroke: #fff;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
+  .hero {
+    padding: 4rem 0;
   }
   
   .hero h1 {
     font-size: 2.5rem;
-  }
-
-  .benefits-list {
-    display: inline-block;
-    text-align: left;
   }
 }
 </style>

@@ -9,7 +9,8 @@ O projeto é um site de marketing de página única para a empresa de limpeza de
 ```
 src
 ├── assets
-│   └── logo.png
+│   ├── fundo-principal.png
+│   └── logo.svg
 ├── components
 │   ├── layout
 │   │   ├── TheHeader.vue
@@ -31,10 +32,11 @@ src
 
 ### Paleta de Cores
 
-- **Primária:** `#2ca0c9` (Azul Escuro)
-- **Secundária:** `#2ca0c9` (Azul mais claro para efeitos de hover)
+- **Primária:** `#1A374D` (Azul Escuro)
+- **Secundária:** `#406882` (Azul mais claro para efeitos de hover)
 - **Fundo:** `#FFFFFF` (Branco)
 - **Texto:** `#343a40` (Cinza Escuro)
+- **Texto sobre Fundo Escuro:** `#FFFFFF` (Branco)
 
 ### Tipografia
 
@@ -47,10 +49,10 @@ src
     - Sombra suave para um visual moderno.
 
 - **Seção Hero (`HeroSection.vue`):**
-    - Título principal e uma breve descrição do serviço.
-    - Lista de benefícios com ícones de verificação (check) SVG personalizados.
-    - Botão de destaque "Solicite um Orçamento Grátis".
-    - Imagem de um sofá limpo com sombra e borda suaves.
+    - Utiliza a imagem `fundo-principal.png` como plano de fundo em tela cheia.
+    - Aplica uma sobreposição escura sobre a imagem para garantir a legibilidade do texto.
+    - Texto e ícones de benefícios em branco para contrastar com o fundo.
+    - Layout centralizado focado no texto e no botão de chamada para ação.
 
 - **Seção de Galeria (`GallerySection.vue`):**
     - Título "Resultados que Falam por Si".
@@ -67,4 +69,4 @@ src
 
 ## Última Solicitação (Concluída)
 
-O usuário solicitou a alteração do layout da galeria de imagens para uma grade 2x3. A alteração foi implementada com sucesso, incluindo a adição de mais imagens de exemplo e a garantia de responsividade em dispositivos móveis.
+O usuário solicitou o uso da imagem `fundo-principal.png` como plano de fundo da `HeroSection`. A alteração foi implementada, incluindo uma sobreposição escura para legibilidade do texto e a remoção da imagem de primeiro plano anterior.
