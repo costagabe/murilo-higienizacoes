@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="container">
       <h1>Higienização Profissional de Sofás e Estofados</h1>
-      <p>Damos vida nova aos seus móveis. Rápido, eficaz и acessível.</p>
+      <p>Damos vida nova aos seus móveis. Rápido, eficaz e acessível.</p>
       <ActionButton :href="whatsappLink" type="secondary">
         Obtenha uma Estimativa Gratuita
       </ActionButton>
