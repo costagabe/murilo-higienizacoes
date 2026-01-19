@@ -16,17 +16,16 @@ Este projeto é uma landing page moderna de página única para a "Murilo Higien
 *   **Imagens:** Imagens de placeholder são usadas para a seção principal e outros elementos visuais.
 
 ### Recursos
-*   **Link Direto para WhatsApp:** Os botões de chamada para ação ("Solicite um Orçamento" e "Obtenha uma Estimativa Gratuita") redirecionam o usuário diretamente para uma conversa no WhatsApp, facilitando o contato imediato.
+*   **Link Direto para WhatsApp:** Os botões de chamada para ação redirecionam o usuário para uma conversa no WhatsApp. A mensagem inicial é personalizada dinamicamente com uma saudação baseada no horário ("Bom dia", "Boa tarde" ou "Boa noite"), tornando o contato mais amigável.
 *   **Personalização Dinâmica de Cores:** Dois campos de seleção de cores são fornecidos em um painel de configurações para permitir alterações em tempo real nas cores primárias e secundárias do site.
 *   **Estrutura de Componente Único:** A aplicação é construída dentro de um único componente Vue (`App.vue`) para simplicidade.
-*   **Gerenciamento de Estado:** A Composition API do Vue (`ref`) é usada para gerenciar o estado reativo das cores dinâmicas.
+*   **Gerenciamento de Estado:** A Composition API do Vue (`ref` e `computed`) é usada para gerenciar o estado reativo, incluindo as cores dinâmicas e o link do WhatsApp.
 
 ## 3. Plano Atual
 
-O plano atual é substituir a funcionalidade do modal de orçamento por um link direto para o WhatsApp, simplificando o processo de contato para o cliente.
+O plano atual é aprimorar o link do WhatsApp para incluir uma mensagem padrão dinâmica e mais acolhedora, que muda de acordo com a hora do dia.
 
-1.  **Atualizar `blueprint.md`:** Documentar a mudança do modal para o link do WhatsApp.
-2.  **Remover Componente do Modal:** Excluir o arquivo `src/components/QuoteModal.vue` e o diretório `src/components`.
-3.  **Atualizar `App.vue`:**
-    *   Alterar os links dos botões para o URL do WhatsApp.
-    *   Remover todo o código relacionado à lógica do modal (estado, funções, importação e o componente no template).
+1.  **Atualizar `blueprint.md`:** Documentar o novo recurso de mensagem dinâmica.
+2.  **Atualizar `App.vue`:**
+    *   Substituir a constante `whatsappLink` por uma propriedade computada.
+    *   Implementar a lógica para determinar a saudação com base na hora e construir a mensagem personalizada.

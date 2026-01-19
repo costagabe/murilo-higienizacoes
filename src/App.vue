@@ -1,23 +1,33 @@
 <script setup>
 import { ref, computed } from 'vue';
-import QuoteModal from './components/QuoteModal.vue';
 
 const primaryColor = ref('#007BFF');
 const secondaryColor = ref('#00C6FF');
-const isModalOpen = ref(false);
 
 const appStyle = computed(() => ({
   '--primary-color': primaryColor.value,
   '--secondary-color': secondaryColor.value,
 }));
 
-const openModal = () => {
-  isModalOpen.value = true;
-};
+const whatsappLink = computed(() => {
+  const now = new Date();
+  const hour = now.getHours();
+  let greeting;
 
-const closeModal = () => {
-  isModalOpen.value = false;
-};
+  if (hour >= 5 && hour < 12) {
+    greeting = "Bom dia";
+  } else if (hour >= 12 && hour < 18) {
+    greeting = "Boa tarde";
+  } else {
+    greeting = "Boa noite";
+  }
+
+  const message = `Olá, ${greeting}! Encontrei o site de vocês e tenho interesse em solicitar um orçamento. Poderíamos conversar?`;
+  const encodedMessage = encodeURIComponent(message);
+  
+  return `https://api.whatsapp.com/send?phone=5511963280867&text=${encodedMessage}`;
+});
+
 </script>
 
 <template>
@@ -25,7 +35,7 @@ const closeModal = () => {
     <header class="header">
       <div class="container">
         <img src="./assets/logo.svg" alt="Logo da Murilo Higienizações" class="logo" />
-        <a href="javascript:void(0)" class="btn btn-primary" @click="openModal">Solicite um Orçamento</a>
+        <a :href="whatsappLink" class="btn btn-primary" target="_blank">Solicite um Orçamento</a>
       </div>
     </header>
 
@@ -34,7 +44,7 @@ const closeModal = () => {
         <div class="container">
           <h1>Higienização Profissional de Sofás e Estofados</h1>
           <p>Damos vida nova aos seus móveis. Rápido, eficaz e acessível.</p>
-          <a href="javascript:void(0)" class="btn btn-secondary" @click="openModal">Obtenha uma Estimativa Gratuita</a>
+          <a :href="whatsappLink" class="btn btn-secondary" target="_blank">Obtenha uma Estimativa Gratuita</a>
         </div>
       </section>
 
@@ -115,8 +125,6 @@ const closeModal = () => {
         </div>
       </div>
     </footer>
-
-    <QuoteModal v-if="isModalOpen" @close="closeModal" />
   </div>
 </template>
 
