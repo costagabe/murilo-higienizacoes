@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2024 Murilo Higienizações. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Murilo Higienizações. Todos os direitos reservados.</p>
     </div>
   </footer>
 </template>
@@ -19,6 +19,6 @@
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
 </style>

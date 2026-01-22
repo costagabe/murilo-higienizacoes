@@ -1,14 +1,20 @@
 <template>
   <section class="testimonials">
     <div class="container">
-      <h2>O Que Meus Clientes Dizem</h2>
+      <h2>O Que Os Clientes Dizem</h2>
       <div class="testimonial-grid">
         <div class="testimonial">
-          <p>"Meu sofá parece novo! O trabalho foi profissional e rápido. Altamente recomendado!"</p>
+          <p>
+            "Meu sofá parece novo! O trabalho foi profissional e rápido.
+            Altamente recomendado!"
+          </p>
           <span>- Maria S.</span>
         </div>
         <div class="testimonial">
-          <p>"Serviço excelente. Ele removeu uma mancha de café que eu achava que era permanente."</p>
+          <p>
+            "Serviço excelente. Ele removeu uma mancha de café que eu achava que
+            era permanente."
+          </p>
           <span>- João D.</span>
         </div>
       </div>
@@ -16,12 +22,12 @@
   </section>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .testimonials {
   padding: 4rem 0;
+  background-color: var(--primary-color);
 }
 
 .testimonials h2 {
@@ -29,7 +35,7 @@
   margin-bottom: 3rem;
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: white;
 }
 
 .testimonial-grid {
@@ -42,14 +48,16 @@
   background: var(--surface-color);
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .testimonial:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 .testimonial p {

@@ -1,17 +1,20 @@
 <template>
   <header class="header">
     <div class="container">
-      <img style="width: 200px; height: 75px" src="../../assets/logo.png" alt="Logo da Murilo Higienizações" class="logo" />
-      <ActionButton :href="whatsappLink">
-        Solicite um Orçamento
-      </ActionButton>
+      <img
+        style="width: 150px; height: 150px"
+        src="../../assets/logo.png"
+        alt="Logo da Murilo Higienizações"
+        class="logo"
+      />
+      <ActionButton :href="whatsappLink"> Solicite um Orçamento </ActionButton>
     </div>
   </header>
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
-import ActionButton from '../ui/ActionButton.vue';
+import { defineProps } from "vue";
+import ActionButton from "../ui/ActionButton.vue";
 
 defineProps({
   whatsappLink: {
@@ -24,7 +27,6 @@ defineProps({
 <style scoped>
 .header {
   background: var(--surface-color);
-  padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;

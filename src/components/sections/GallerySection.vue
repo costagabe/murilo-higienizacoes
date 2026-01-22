@@ -2,31 +2,37 @@
   <section class="gallery">
     <div class="container">
       <h2>Resultados que Falam por Si</h2>
-      <p class="subtitle">Veja a transformação que podemos fazer no seu estofado.</p>
-      
+      <p class="subtitle">
+        Veja a transformação que podemos fazer no seu estofado.
+      </p>
+
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="https://placehold.co/600x400/2ca0c9/FFFFFF?text=Antes" alt="Sofá antes da limpeza">
+          <img
+            src="../../assets/testimonials/before1.png"
+            alt="Sofá antes da limpeza"
+          />
           <div class="overlay">Antes</div>
         </div>
         <div class="gallery-item">
-          <img src="https://placehold.co/600x400/FFFFFF/2ca0c9?text=Depois" alt="Sofá depois da limpeza">
+          <img
+            src="../../assets/testimonials/after1.png"
+            alt="Sofá depois da limpeza"
+          />
           <div class="overlay">Depois</div>
         </div>
         <div class="gallery-item">
-          <img src="https://placehold.co/600x400/2ca0c9/FFFFFF?text=Antes" alt="Poltrona antes da limpeza">
+          <img
+            src="../../assets/testimonials/before2.png"
+            alt="Poltrona antes da limpeza"
+          />
           <div class="overlay">Antes</div>
         </div>
         <div class="gallery-item">
-          <img src="https://placehold.co/600x400/FFFFFF/2ca0c9?text=Depois" alt="Poltrona depois da limpeza">
-          <div class="overlay">Depois</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x400/2ca0c9/FFFFFF?text=Antes" alt="Cadeira antes da limpeza">
-          <div class="overlay">Antes</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x400/FFFFFF/2ca0c9?text=Depois" alt="Cadeira depois da limpeza">
+          <img
+            src="../../assets/testimonials/after2.png"
+            alt="Poltrona depois da limpeza"
+          />
           <div class="overlay">Depois</div>
         </div>
       </div>
