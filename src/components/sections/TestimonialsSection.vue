@@ -8,14 +8,14 @@
             "Meu sofá parece novo! O trabalho foi profissional e rápido.
             Altamente recomendado!"
           </p>
-          <span>- Maria S.</span>
+          <span>- Cíntia A.</span>
         </div>
         <div class="testimonial">
           <p>
             "Serviço excelente. Ele removeu uma mancha de café que eu achava que
             era permanente."
           </p>
-          <span>- João D.</span>
+          <span>- Airton S.</span>
         </div>
       </div>
     </div>
