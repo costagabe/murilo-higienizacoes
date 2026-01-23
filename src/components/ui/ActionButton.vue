@@ -1,5 +1,10 @@
 <template>
-  <a :href="href" :class="['btn', `btn-${type}`]" target="_blank">
+  <a
+    :href="href"
+    :class="['btn', `btn-${type}`]"
+    target="_blank"
+    @click="handleClick"
+  >
     <slot />
   </a>
 </template>
@@ -7,7 +12,7 @@
 <script setup>
 import { defineProps } from "vue";
 
-defineProps({
+const props = defineProps({
   href: {
     type: String,
     required: true,
@@ -17,6 +22,10 @@ defineProps({
     default: "primary", // can be 'primary' or 'secondary'
   },
 });
+
+function handleClick() {
+  gtag_report_conversion(props.href);
+}
 </script>
 
 <style scoped>
