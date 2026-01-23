@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
 defineProps({
   href: {
@@ -14,7 +14,7 @@ defineProps({
   },
   type: {
     type: String,
-    default: 'primary', // can be 'primary' or 'secondary'
+    default: "primary", // can be 'primary' or 'secondary'
   },
 });
 </script>
@@ -27,7 +27,10 @@ defineProps({
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(26, 55, 77, 0.25);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn-primary {

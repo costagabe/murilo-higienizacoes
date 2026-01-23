@@ -56,10 +56,17 @@ defineProps({
 }
 
 .whatsapp-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-right: 8px;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media (max-width: 503px) {
+  .whatsapp-icon {
+    width: 48px;
+    height: 48px;
+  }
 }
 </style>
